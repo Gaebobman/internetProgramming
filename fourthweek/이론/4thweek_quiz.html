@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+
+    <script>
+        function hamsu(){
+            var ret = prompt("섭씨 온도를 화씨온도로 바꿔드립니다!!! ", "36.5");
+        if(ret == null) {
+            alert("입력안했네요...");
+        }else if(ret == ""){
+            alert("입력안했네요...")
+        }else{
+            alert(ret+ "℃ 는 " + (parseInt(ret)*1.8 +32) + "℉ 입니다.")
+        }
+
+        }
+
+        function confirmhamsu(){
+            var load = confirm("전송할까요");
+                if(load == true) {
+	            // 사용자가 "확인" 버튼을 누른 경우
+                var elem = document.getElementById('paragraph');
+                elem.style.color = 'red';
+                elem.innerHTML = "Hey!!!";
+                }
+                else {
+	            // 취소 버튼이나 다이얼로그를 닫은 경우
+                alert("goooooodbye");
+            }              
+        }
+       
+    </script>
+</head>
+<body>
+    <h1>섭씨 to 화씨 변환기</h1>
+    <button type= "button" onclick="hamsu()" >계산하기</button>
+
+    <hr>
+    <br>
+    <h1>컨펌버튼</h1>
+    <botton type= "button" onclick="confirmhamsu()">컨펌버튼</botton>
+    <p id = "paragraph"></p>
+
+</body>
+</html>
+
+
+<!-- 
+ParseInt()해주셔야 하는데
+if(null)케이스 를 꼭 체크해 주셔야 해요
+이때 ParseInt를 먼저 하면 if(null)에서 판단 안되기 때문에 parseInt는 꼭 뒤에 실제 계산할떄 해주셔야 해요  
+-->

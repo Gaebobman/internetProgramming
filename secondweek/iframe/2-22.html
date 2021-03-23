@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>iframe을 가지는 웹 페이지</title>
+</head>
+<body> 
+<h3>2 개의 &lt;iframe&gt;을 가집니다.</h3>
+<hr>
+<iframe src="iframe1.html" name = "left"
+    srcdoc="<html><head></head>
+						<body>hello</body></html>" 
+                       
+        
+></iframe>
+
+<!--srcdoc의 우선순위가 더 높다--> 
+
+<iframe src="iframe2.html" width="200" height="100">
+</iframe>
+</body>
+</html>

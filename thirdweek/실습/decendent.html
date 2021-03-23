@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>Decendent</title>
+    <style>
+        body em{ /*body의 자손인 em 만 선택한다.*/
+            color: red;
+        }
+        body > h1{ /*body의 1대째 자손인 h1 만 선택한다.*/
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This headline is <em>very</em> important</h1> <!-- h1은 body 태그의 1대 자손이고 em은 2대 자손이다.-->
+    <div>
+        <h1>Test headline</h1>
+    </div>
+</body>
+</html>

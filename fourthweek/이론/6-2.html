@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <script>
+        function over(obj){
+            obj.src="imgs/apple.jpeg";
+        }
+        function out(obj){
+            obj.src="imgs/banana.jpg";
+        }
+    </script>
+</head>
+<body>
+    <h3>마우스를 올려 보라</h3>
+    <hr>
+    <img src = "imgs/apple.jpeg" alt ="이미지"
+            onmouseover="over(this)"
+            onmouseout="out(this)">
+    
+</body>
+</html>
+
+<!-- 4번 문제 하실때 반드시 ParseInt()해주셔야 하는데
+if(null)케이스 를 꼭 체크해 주셔야 해요
+ -->
