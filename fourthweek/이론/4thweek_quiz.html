@@ -2,15 +2,29 @@
 <head>
     <title>Document</title>
 
+   
+</head>
+<body>
+    <h1>섭씨 to 화씨 변환기</h1>
+    <button type= "button" onclick="hamsu()" >계산하기</button>
+
+    <hr>
+    <br>
+    <h1>컨펌버튼</h1>
+    <botton type= "button" onclick="confirmhamsu()">컨펌버튼</botton>
+    <p id = "paragraph"></p>
+    
     <script>
+        var hwaci;
         function hamsu(){
             var ret = prompt("섭씨 온도를 화씨온도로 바꿔드립니다!!! ", "36.5");
         if(ret == null) {
             alert("입력안했네요...");
         }else if(ret == ""){
-            alert("입력안했네요...")
+            alert("입력안했네요...");
         }else{
-            alert(ret+ "℃ 는 " + (parseInt(ret)*1.8 +32) + "℉ 입니다.")
+           hwaci = ret * 9 / 5 + 32;
+           alert(ret+ "℃ 는 " + (parseInt(ret)*1.8 +32) + "℉ 입니다.")
         }
 
         }
@@ -30,17 +44,12 @@
         }
        
     </script>
-</head>
-<body>
-    <h1>섭씨 to 화씨 변환기</h1>
-    <button type= "button" onclick="hamsu()" >계산하기</button>
-
-    <hr>
+    <h3>변경 후의 온도</h3>
     <br>
-    <h1>컨펌버튼</h1>
-    <botton type= "button" onclick="confirmhamsu()">컨펌버튼</botton>
-    <p id = "paragraph"></p>
-
+    <!--script>
+        document.write(hwaci);
+        document.write("입니다. <br>");
+    </!--script-->
 </body>
 </html>
 

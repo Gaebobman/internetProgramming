@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+
+    <h3>제수와 나머지</h3>
+    <hr>
+    <script>
+        var number = prompt("정수를 입력해주세요","");
+        parseInt(number);
+        if(!isNaN(number)){
+            for(var i = 2 ; i <=20; i++){
+                document.write("제수가"+i+"일 때" +"<br>");
+                document.write("몫 : " + parseInt(eval(number / i))+"<br>");
+                document.write("나머지 : " + eval(number % i)+"<br><br>");
+            }
+
+        }else{
+            alert("아 정수만 입력하라고");
+        }
+    </script>    
+
+
+</body>
+</html>

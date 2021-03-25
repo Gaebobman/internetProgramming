@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>for 문</title>
+</head>
+<body>
+<h3>for 문으로 10px~35px 크기 출력</h3>
+<hr>
+<script>
+	for(var size=10; size<=35; size+=5) { // 5씩 증가
+		document.write("<span ");
+		document.write("style='font-size:" + size + "px'>");
+		//<span style ="font-size: 10px">10px </span>
+        //쌍 따옴표 안의 쌍따옴표는 따옴표로 처리해야한다!!!
+        // 그러니깐 편하게 하려면
+        // "<span style ="font-size: 10px">10px </span>"
+        // 전체에 쌍따옴표가 있다고 생각하고 안에있는 쌍따옴표는
+        // "font-size: 10px" 안에있는 쌍 따옴표는 작은 따옴표로 해
+        document.write(size + "px");
+		document.write("</span>");
+	}
+    </script>
+</body>
+</html>
