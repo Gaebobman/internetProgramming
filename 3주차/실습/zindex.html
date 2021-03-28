@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        #box1 {
+            position: absolute; /*relative(마지막꺼와 상대적 위치) , static 등등이 있다.*/
+            top: 0px;
+            left: 0px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            z-index: 200; /*인덱스가 클수록 앞으로 나온다. 100단위로 쓰는 이유 
+            -> 요구사항(중간에 하나씩 더 껴주세요!) 이 변경될때마다. 편하려고*/
+        }
+        #box2 {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            z-index: 100; /**/
+        }
+        #box3 {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            z-index: 0; /**/
+        }
+    </style>
+</head>
+<body>
+    <div id = "box1"> box #1</div>
+    <div id = "box2"> box #2</div>
+    <div id = "box3"> box #3</div>
+
+</body>
+</html>
