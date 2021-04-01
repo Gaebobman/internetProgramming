@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+   
+</head>
+<body>
+    <script>
+        var correct  = 60;
+        var i = 0;
+        function guess(){
+            i++;
+            document.getElementById("times").value = i;
+            try{
+                var x = document.getElementById("number").value;
+                if(x =="") throw "입력없음";
+                if(isNaN(x)) throw "숫자만 입력해";
+                if(x > correct) throw "좀 크네?";
+                if(x < correct) throw "좀 작네?";
+                if(x == correct) throw "성공";
+    
+            }
+            catch(error){
+                var y = document.getElementById("message");
+                y.value = error;
+            }
+        }
+    </script>
+    <h1>숫자맞추기 게임</h1><br>
+    숫자: <input id = "number" type="text""> 
+    <button onclick="guess()">확인</button><br>
+    추측횟수: <input id = "times" type="text"> 힌트: <input id = "message" type ="text">
+  
+</body>
+</html>

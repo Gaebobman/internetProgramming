@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>덧셈 계산 게임</title>
+</head>
+<body>
+    <script>
+        function calc(){
+            var ans = document.getElementById("answer").value;
+            if(parseInt(ans) == 60){
+                alert("정답");
+            }else{
+                alert("오답");
+            }
+
+        }
+    </script>
+    <h1>덧셈 계산 하시고, 결과를 입력하고 확인 버튼을 클릭하여 정확한지 확인해 보세요.</h1>
+    <hr>
+    <p>
+        20+40 =
+    </p>
+    덧셈결과 : <input id = "answer" type="number">
+    <button type="button" onclick="calc()">결과 확인</button>
+</body>
+</html>

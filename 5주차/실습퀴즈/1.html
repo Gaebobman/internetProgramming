@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>오전이면 lightskyblue, 오후이면 orange 배경</h1>
+        <script>
+            function whattime(){
+                var now = new Date();
+                var hours = date.getHours();
+                var minute= date.getMinutes();
+                var hours = date.getSeconds();
+                document.write("Current Time :" +hours);
+                var nowtime = now.getHours();
+                if(nowtime < 12){
+                    document.body.style.backgroundColor ="lightskyblue";
+                }else{
+                    document.body.style.backgroundColor ="orange";
+                }
+            }
+            whattime();
+        </script>
+
+</body>
+</html>
