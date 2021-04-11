@@ -1,0 +1,12 @@
+/* 타입 선택자: 모든 h1 요소를  선택 */
+h1 {
+  color: green;
+}
+/* 전체 선택자: 페이지 안의 모든 요소를 선택 */
+/* * {
+  color: green;
+} */
+/* 아이디선택자 아이디가 insertIdHere인 요소를 선택  */
+#insertIdHere {
+  color: red;
+}
