@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        caption{caption-side: bottom;}
+        table, tr, th, td{
+            border: 2px solid blue ;
+        }
+        .bgcTable{
+            color: white;
+            border: 2px solid red ;
+            border-collapse: collapse;
+            background-color: green;
+        }
+        .separate table,tr,th{
+            border:1px solid green;
+        }
+        .separate th{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>VIP 고객 리스트</caption>
+        <thead><th>이름</th><th>이메일</th></thead>
+        <tbody>
+            <tr>
+                <td>김철수</td><td>chul@google.com</td>
+            </tr>
+            <tr>
+                <td>김영희</td><td>young@google.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<h2>경계의 통합</h2>
+<body>
+    <table style="border-collapse: collapse; border: dotted blueviolet;">
+
+        <thead><th>이름</th><th>이메일</th></thead>
+        <tbody>
+            <tr>
+                <td>김철수</td><td>chul@google.com</td>
+            </tr>
+            <tr>
+                <td>김영희</td><td>young@google.com</td>
+            </tr>
+        </tbody>
+    </table>
+<h2>배경색 넣어</h2>
+<body>
+    <table class="bgcTable">
+
+        <thead><th>이름</th><th>이메일</th></thead>
+        <tbody>
+            <tr>
+                <td>김철수</td><td>chul@google.com</td>
+            </tr>
+            <tr>
+                <td>김영희</td><td>young@google.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<h2>헤더와 분리</h2>
+<body>
+    <table class="separate">
+
+        <thead><th>이름</th><th>이메일</th></thead>
+        <tbody>
+            <tr>
+                <td>김철수</td><td>chul@google.com</td>
+            </tr>
+            <tr>
+                <td>김영희</td><td>young@google.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

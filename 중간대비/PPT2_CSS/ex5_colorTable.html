@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>짝홀이 다른 테이블</title>
+        <style>
+            table th{
+                background-color: blue;
+                color: white;
+                border: dotted black 1px;
+            }
+            table tr,td{
+                background-color: white;
+                border: dotted black 1px;
+            }
+            
+            table .alter td{
+                background-color: yellow;
+                border: dotted black 1px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th>이름</th><th>이메일</th>
+                    
+            </thead>
+            <tbody>
+                <tr>
+                    <td>김철수</td><td>chul@google.com</td>
+                </tr>
+                <tr class="alter">
+                    <td>김영희</td><td>chul@google.com</td>
+                </tr>
+                <tr>
+                    <td>홍길동</td><td>chul@google.com</td>
+                </tr>
+                <tr class="alter">
+                    <td>김수진</td><td>chul@google.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

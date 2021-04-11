@@ -2,6 +2,11 @@
 h1 {
   color: green;
 }
+h1 {
+  /*아래쪽에 있는게 우선순위가 높다!*/
+  border-bottom: 1px solid gray;
+  color: red;
+}
 /* 전체 선택자: 페이지 안의 모든 요소를 선택 */
 /* * {
   color: green;
@@ -9,4 +14,39 @@ h1 {
 /* 아이디선택자 아이디가 insertIdHere인 요소를 선택  */
 #insertIdHere {
   color: red;
+}
+/* 클래스 선택자입니다. */
+.classhere {
+  text-align: center;
+  color: brown;
+}
+/* 또는 콤마로 분리해서 나열 가능해 */
+h2,
+h3,
+h4 {
+  font-family: sans-serif;
+  background-color: aqua;
+}
+/*자손 자식 형제 결합자로는*/
+/* 바디 안의 em 요소 */
+body em {
+  color: thistle;
+}
+/* 얘는 바디 안의 직계자손 h5 만 */
+body > h5 {
+  color: darkmagenta;
+}
+/* 의사 클래스 */
+a:link {
+  color: blue;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: red;
+}
+/* 폰트설정 */
+body {
+  font-family: "Times New Roman", Times, serif;
 }
