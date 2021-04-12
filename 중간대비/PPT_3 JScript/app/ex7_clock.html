@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+<div id = "clock"></div>
+<script>
+function clock(){
+    var now = new Date();
+    var s = now.getHours() +": "+ now.getMinutes() +": "+ now.getSeconds();
+    document.getElementById("clock").innerHTML = s;
+    setTimeout("clock()", 1000);
+}
+clock();
+
+</script>    
+</body>
+</html>

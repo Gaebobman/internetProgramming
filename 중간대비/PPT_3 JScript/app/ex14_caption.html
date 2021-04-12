@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        .selection{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h3>먹고 싶은 것 하나만 선택</h3>
+    <form>
+        <label>
+            <input type="radio" name="coffee" value="1">
+            시커먼 커피<img class="selection" 
+            src="../src/커피사진.jpg"/>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="coffee" value="2" checked>
+            하얀 커피<img class="selection" 
+            src="../src/icedcoffee.jpg"/>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="coffee" value="3">
+            커피 기계<img  class="selection" 
+            src="../src/machine.jpg"/>
+        </label>
+        <br>
+    </form>
+    <input type="color" value="#00FF00"
+    onchange="document.body.style.color=this.value">
+
+
+</body>
+</html>

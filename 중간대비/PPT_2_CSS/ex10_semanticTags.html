@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0px;
+        }
+        header{
+            color: black;
+            background-color: plum;
+            text-align: center;
+            padding:5px;
+        }
+        section#main{
+            display: table-cell;
+            /* td 요소처럼 사용할수 있다구~ */
+            background-color: cornflowerblue;
+            padding: 15px;
+        }
+        nav{
+            display: table-cell;
+            background-color: aquamarine;
+            padding:15px;
+        }
+        footer{
+            background-color: brown;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            margin: 0px 0px 0px 0px;
+            font-size: 90%;
+        }
+        h1{
+            margin: 0px;
+        }
+        img{
+            opacity: 1.0;
+            /* 가시성 */
+        }
+        img:hover{
+            opacity: 0.4;
+            border: dotted seashell 1px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>My Blog Page</h1>
+    </header>
+    <nav>
+        <h1>links</h1>
+        <ul>
+            <li><a href="http://www.w3c.org">W3C</a></li>
+            <li><a href="http://www.mozilla.com">MOZILLA</a></li>
+            <li><a href="http://www.naver.com">NAVER</a></li>
+        </ul>
+        <figure>
+            <img width="85" height="85" 
+            src="src/커피사진.jpg"
+            alt="커피사진"
+            />
+            <figcaption>커피사진이여요</figcaption>
+        </figure>
+    </nav>
+    <section id="main">
+        <article>
+            <h1>Semantic Tags</h1>
+            <p> 시멘틱 요소(Semantic elements)들은 브라우저에게 요소의 의미나 
+                목적을 명확하게 알려주는 요소이다.
+            </p>
+        </article>
+        <article>
+            <h1>div와 span</h1>
+            <p>
+                div은 “divide“의 약자로서 페이지를 논리적인 섹션으로 분리하는데 사용되는 태그이다.
+                span 요소는 인라인 요소로서 텍스트를 위한 컨테이너로 사용할 수 있다. 
+            </p>
+        </article>
+    </section>
+    <footer>Copyright &COPY; 2021 Lee</footer>
+</body>
+</html>

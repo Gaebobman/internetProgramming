@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var s = 'aBcDeF';
+    var result1 = s.toLowerCase();
+    var result2 = s.toUpperCase();
+    document.writeln(result1); // 출력: abcdef
+    document.writeln(result2+ "<br>"); // 출력: ABCDEF
+
+    var s1 = " 문자열 1 ";
+    var s2 = " 문자열 2 ";
+    s3 = s1.concat(s2);
+    document.writeln(s3 + '<br>'); // “문자열 1  문자열 2“
+
+    s = "One,Two,Three,Four,Five";
+    array = s.split(',');
+    console.log(s);
+    for (i = 0; i < array.length; i++) {
+        document.writeln(i + '-' + array[i] + '<br>');
+    }
+
+    s = "This is a test.";
+
+    document.write("Big: " + s.big() + "<br>");
+    document.write("Small: " + s.small() + "<br>");
+    document.write("Bold: " + s.bold() + "<br>");
+    document.write("Italic: " + s.italics() + "<br>");
+    document.write("Fixed: " + s.fixed() + "<br>");
+    document.write("Strike: " + s.strike() + "<br>");
+    document.write("Fontcolor: " + s.fontcolor("green") + "<br>");
+    document.write("Fontsize: " + s.fontsize(6) + "<br>");
+    document.write("Subscript: " + s.sub() + "<br>");
+    document.write("Superscript: " + s.sup() + "<br>");
+    document.write("Link: " + s.link("http://www.google.com") + "<br>");
+
+    </script>
+</body>
+</html>
