@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>지역변수와 전역변수</title>
+<script>
+var a = 2;
+b = 7;
+function add() {
+var a = 4;
+c = 6; //전역변수, var로 선언하지 않음
+document.write("a+b+c의 값은 : " + (a + b + c) + " 이다.", "<br>");
+}
+add();
+document.write("a+b+c의 값은 : " + (a + b + c) + " 이다.", "<br>");
+</script>
+</head>
+<body>
+</body>
+</html>
