@@ -3,7 +3,7 @@
 "C"를 누르면, 입력했던 수식을 초기화 시키고,
 "="를 투르면, 입력했던 수식의 계산 결과를 출력하시오.
   -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -40,9 +40,9 @@
 <body>
 <form>
   <p>
-    display <input id = "display" size="30" readonly> 
+    display <input id = "display" size="30" readonly>  -->
 <!-- readonly 로 사용자가  직접 입력 못하게 함 -->
-  </p>
+  <!-- </p>
   <input type="button" value = "7" onclick="add('7')">
   <input type="button" value = "8" onclick="add('8')">
   <input type="button" value = "9" onclick="add('9')">
@@ -61,7 +61,79 @@
   <input type="button" value = "0" onclick="add('0')">
   <input type="button" value = "+" onclick="add('+')">
   <input type="button" value = "C" onclick="clearDisplay()">
-  <input type="button" value = "=" onclick="compute()">
-</form>
+  <input type="button" value = "=" onclick="compute()"> -->
+<!-- </form>
 </body>
-</html>
+</html> -->
+
+<!-- 
+제시된 화면과 같은 계산기를 구성하고, 각 버튼을 클릭하면 display text 입력 상자에 입력된 수식을 출력하시오.
+"C"를 누르면, 입력했던 수식을 초기화 시키고,
+"="를 투르면, 입력했던 수식의 계산 결과를 출력하시오.
+  -->
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Document</title>
+    <style>
+      input[type= "button"]{
+        width: 50px;
+        height: 50px;
+        /* background-color: rgba(128, 128, 128, 0.68);
+        border: solid black 1px;
+        text-align: center;
+        margin-right:1px;
+        margin-bottom: 1px; */
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script>
+      var exp="";
+      function calc(){
+        var obj = document.getElementById("expression")
+        try {
+          obj.value= eval(exp);
+          exp = eval(exp);
+        } catch (error) {
+          alert(error.name + ": " + error.message)
+          exp = "";
+        }
+
+      }
+      function add(obj){
+        exp+=obj
+        document.getElementById("expression").value = exp;
+      
+        }
+      function clearDisplay(){
+        exp="";
+        document.getElementById("expression").value= exp;
+        
+      }
+      
+    </script>
+   <p>
+    display: <input type="text" id="expression" size="30"><br><br>
+    <input type="button" value="7" onclick="add('7')">
+    <input type="button" value="8" onclick="add('8')">
+    <input type="button" value="9" onclick="add('9')">
+    <input type="button" value="/" onclick="add('/')"><br>
+    <input type="button" value="4" onclick="add('4')">
+    <input type="button" value="5" onclick="add('5')">
+    <input type="button" value="6" onclick="add('6')">
+    <input type="button" value="*" onclick="add('*')"><br>
+    <input type="button" value="1" onclick="add('1')">
+    <input type="button" value="2" onclick="add('2')">
+    <input type="button" value="3" onclick="add('3')">
+    <input type="button" value="-" onclick="add('-')"><br>
+    <input type="button" value="0" onclick="add('0')">
+    <input type="button" value="+" onclick="add('+')">
+    <input type="button" value="C" onclick="clearDisplay()">
+    <input type="button" value="=" onclick="calc()"><br>
+   </p>
+  </body>
+  </html>
