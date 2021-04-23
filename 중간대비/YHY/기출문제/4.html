@@ -11,20 +11,22 @@
             return car.model;
         };
         car.setPrice= function(){
-            var ret = prompt("가격",""); // 2. 변수 var에 따로 받아 줘야한다.
-            car.price = ret;   
+        
+            car.price = prompt("가격",""); 
         }
         car.setPrice();
         
-        for(var a = 0; a<car.length; a++){
+        for(var a in car){                          //2. 조건오류
             document.write(a, ":", car[a],"<br/>");
         }
-        obj = document.getElementById("model");
-        obj.innerHTML = car.getModel;
     </script>
-
 </head>
 <body>
-    <div id = "model"></div>
+    
+    <div id = "model"></div> 
+    <!-- div element 생성 전에  부를 수 없다.-->
+    <script>
+        document.getElementById("model").innerHTML = car.getModel();
+    </script>
 </body>
 </html>

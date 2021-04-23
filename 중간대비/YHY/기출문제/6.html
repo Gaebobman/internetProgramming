@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+    function addInputForm(){
+        var gObj = document.getElementById("group");
+        var pObj = document.createElement("p");
+        var textNode = document.createTextNode("입력: ");
+        pObj.appendChild(textNode);
+        var newInput = document.createElement("input");
+        newInput.setAttribute("type", "text");
+        newInput.setAttribute("name", "myText");
+        pObj.appendChild(newInput);
+        gObj.appendChild(pObj);
+
+    }
+    </script>
+</head>
+<body>
+<p>
+    <input type="button" value="추가" onclick="addInputForm()">
+</p>
+<div id = "group" ></div>
+</body>
+</html>

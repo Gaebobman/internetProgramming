@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script type="text/javascript">
+        function addItemTodo(){
+          var value = document.getElementById('item1').value;
+          var value2 = document.getElementById('item2').value;
+          var my_table = document.getElementById('todo');
+          var rows = my_table.getElementsByTagName("tr").length;
+          row = my_table.insertRow(rows);
+          cell1 = row.insertCell(0);
+          cell2 = row.insertCell(1);
+          cell1.innerHTML = value;
+          cell2.innerHTML = value2;
+        }
+        </script>
+</head>
+<body>
+
+<input type="text" id="item1" placeholder="item1" size="12">
+<input type="text" id="item2" placeholder="item2" size="14">
+<button id="add" onclick="addItemTodo()">Add</button>
+<table border="1" style="width:50%" id="todo">
+    <tr>
+    <th>Input from 'item1'</th>
+    <th>Input from 'item2'</th>
+    <th>Text Box</th>
+    <th>Button</th>  
+    </tr>
+</table>
+</body>
+</html>
