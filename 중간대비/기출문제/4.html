@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var car = {
+            model : "sedan"
+        }; // 1. []가 아닌 {}
+
+        car.getModel = function(){
+            return car.model;
+        };
+        car.setPrice= function(){
+            var ret = prompt("가격",""); // 2. 변수 var에 따로 받아 줘야한다.
+            car.price = ret;   
+        }
+        car.setPrice();
+        
+        for(var a = 0; a<car.length; a++){
+            document.write(a, ":", car[a],"<br/>");
+        }
+        obj = document.getElementById("model");
+        obj.innerHTML = car.getModel;
+    </script>
+
+</head>
+<body>
+    <div id = "model"></div>
+</body>
+</html>
