@@ -1,9 +1,9 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <!-- <form action="addVids.jsp" method="post"> -->
-    <title>동영상 등록 페이지</title>
+    <title>동영상 상세정보 페이지</title>
     <link href="style.css" type = "text/css" rel ="stylesheet">
 </head>
 <body>
@@ -33,13 +33,13 @@
                 <tr>
                     <td>
                         제목<br>
-                        <input type="text" id ="videoTitle">
+                        <input type="text" name ="videoTitle">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         설명<br> 
-                        <textarea id="videoDescription" placeholder = "내용"></textarea>
+                        <textarea id="videoDescription" name="videoDescription" placeholder = "내용" ></textarea>
                     </td>
                 </tr>
                 <tr>

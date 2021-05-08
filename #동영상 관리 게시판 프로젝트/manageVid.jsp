@@ -1,3 +1,8 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+String stitle = request.getParameter("videoTitle");
+String sdescription = request.getParameter("videoDescription");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,17 +32,17 @@
         </div>
         <div class = "videoInfoBox">
             <div class="vidTitle">
-                <h1 name= "title">
-                    돌고래
+                <h1 id = "desTitle" >
+                <%=stitle%>
                 </h1>
                 <p>
-                    야스
+                    날짜
                 </p>
             </div>
             <div class="vidDes">
                 <fieldset>
                     <legend>설명</legend>
-                    <textarea></textarea>
+                    <textarea readonly ><%=sdescription%></textarea>
                 </fieldset>
             </div>
             <div class ="submitDiv">

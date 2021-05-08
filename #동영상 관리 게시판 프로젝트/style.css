@@ -1,6 +1,6 @@
 /* .wrapper {
   margin: 0 auto;
-  auto ì¢Œìš° ì—¬ë°± ë°˜ìœ¼ë¡œ ë‚˜ëˆ”
+  auto ÁÂ¿ì ¿©¹é ¹ÝÀ¸·Î ³ª´®
 }*/
 p {
   margin: 0;
@@ -180,34 +180,3 @@ fieldset > textarea {
   font-weight: bold;
 }
 
-/* .videoInfo div {
-  position: static;
-  width: 600px;
-  margin: 1px;
-}
-.videoInfo div > input {
-  position: inherit;
-  margin: 1px;
-  width: 587px;
-}
-.videoInfo div > #videoDescription {
-  resize: none;
-  width: 587px;
-  height: 225px;
-} */
-
-/* .videoDataArea {
-  position: absolute;
-  right: 0%;
-  margin-right: 38px;
-  margin-top: 85px;
-  border: 1px solid black;
-  float: right;
-  width: 600px;
-  height: 526px;
-}
-.videoDataArea #videoInfo {
-  margin: 4px;
-  border: 1px solid black;
-  height: 514px;
-} */ ;
