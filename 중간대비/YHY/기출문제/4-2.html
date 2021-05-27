@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var car = {model : "sedan"}; //obj생성시 {}사용
+        
+
+        car.getModel = function(){
+            return car.model;
+        };
+        car.setPrice= function(){
+        
+            car.price = prompt("가격",""); 
+        }
+        car.setPrice();
+        
+        for(var a in car){                          //2. 조건오류
+            document.write(a, ":", car[a],"<br/>");
+        }
+    </script>
+</head>
+<body>
+    
+    <div id = "model"></div> 
+    <!-- div element 생성 전에  부를 수 없다.-->
+    <script>
+        document.getElementById("model").innerHTML = car.getModel();
+    </script>
+</body>
+</html>

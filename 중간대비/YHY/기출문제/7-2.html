@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+        function show(){
+            var chk = document.getElementsByName("fav");
+            var str = "";
+            try{
+                for(var i in chk){
+                    if(chk[i].checked){
+                        str += chk[i].value + ", ";
+                    }
+                }
+                if(str =="")
+                    throw "반드시 하나는 선택해야 합니다."
+                else{
+                    alert("선택한 값: " + str);
+                }
+            }catch(e){
+                alert(e);
+            }
+        }
+    </script>
+
+
+    선택: <input type="checkbox" name= "fav" value = "100">100
+    <input type="checkbox" name= "fav" value = "50">50
+    <input type="checkbox" name= "fav" value = "10">10
+    <input type="checkbox" name= "fav" value = "1">1 <br>
+    <button type="submit" onclick="show()">선택한 값 보기</button>
+</body>
+</html>

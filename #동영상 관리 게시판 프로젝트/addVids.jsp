@@ -7,6 +7,21 @@
     <link href="style.css" type = "text/css" rel ="stylesheet">
 </head>
 <body>
+    <script>
+        function isFull(){
+        var title = getElementByName("videoTitle");
+        var decription = getElementByName("videoDescription");
+           
+        if(title.value.length == 0){
+            alert("제목을 입력하세요");
+            title.focus();
+        }
+        if(decription.value.length == 0){
+            alert("영상설명을 입력하세요");
+            title.focus();
+        }
+    }
+   </script>
     <form action="manageVid.jsp" method="post">
     <header>
         <nav>

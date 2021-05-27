@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ÀÚ¹Ù½ºÅ©¸³Æ® Àü¿ªÇÔ¼ö</title>
+<title>ìë°”ìŠ¤í¬ë¦½íŠ¸ ì „ì—­í•¨ìˆ˜</title>
 <script>
 function evalParseIntIsNaN() {
-	var res = eval("2*3+4*6"); // res´Â 30
-	document.write("eval(\"2*3+4*6\")´Â " + res + "<br>");
+	var res = eval("2*3+4*6"); // resëŠ” 30
+	document.write("eval(\"2*3+4*6\")ëŠ” " + res + "<br>");
 	var m = parseInt("32");
-	document.write("parseInt(\"32\")´Â " + m + "<br>");
+	document.write("parseInt(\"32\")ëŠ” " + m + "<br>");
 	var n = parseInt("0x32");
-	document.write("parseInt(\"0x32\")´Â " + n + "<br><br>");
+	document.write("parseInt(\"0x32\")ëŠ” " + n + "<br><br>");
 
-	// "hello"´Â Á¤¼ö·Î º¯È¯ÇÒ ¼ö ¾øÀ¸¹Ç·Î parseInt("hello")´Â NaN ¸®ÅÏ
+	// "hello"ëŠ” ì •ìˆ˜ë¡œ ë³€í™˜í•  ìˆ˜ ì—†ìœ¼ë¯€ë¡œ parseInt("hello")ëŠ” NaN ë¦¬í„´
 	n = parseInt("hello"); 
 	if(isNaN(n)) // true
-		document.write("hello´Â ¼ıÀÚ°¡ ¾Æ´Õ´Ï´Ù.");
+		document.write("helloëŠ” ìˆ«ìê°€ ì•„ë‹™ë‹ˆë‹¤.");
 }
 </script>
 </head>
